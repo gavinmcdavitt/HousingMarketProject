@@ -1,0 +1,93 @@
+MariaDB [real_estate_3]> SOURCE c:/Users/gavin/Desktop/cop4710/query.sql;
++----------+-----------+------+---------------+
+| bedrooms | bathrooms | size | address       |
++----------+-----------+------+---------------+
+|        3 |         2 | 1600 | 101 Cherry Ln |
+|        3 |         2 | 1500 | 123 Main St   |
+|        3 |         2 | 1800 | 303 Maple St  |
+|        4 |         3 | 2000 | 456 Oak Ave   |
++----------+-----------+------+---------------+
+4 rows in set (0.002 sec)
+
++---------------+
+| address       |
++---------------+
+| 101 Cherry Ln |
+| 123 Main St   |
+| 303 Maple St  |
++---------------+
+3 rows in set (0.002 sec)
+
++---------------+
+| address       |
++---------------+
+| 101 Cherry Ln |
+| 123 Main St   |
+| 303 Maple St  |
++---------------+
+3 rows in set (0.000 sec)
+
++---------------+--------+
+| address       | price  |
++---------------+--------+
+| 123 Main St   | 250000 |
+| 101 Cherry Ln | 220000 |
++---------------+--------+
+2 rows in set (0.003 sec)
+
++---------------+--------+
+| address       | price  |
++---------------+--------+
+| 789 Pine Rd   | 500000 |
+| 404 Cedar Ave | 350000 |
+| 505 Walnut Dr | 220000 |
++---------------+--------+
+3 rows in set (0.001 sec)
+
++---------+-------------+----------+------------------+------------+
+| agentId | name        | phone    | firmName         | Started    |
++---------+-------------+----------+------------------+------------+
+|       1 | Alice Brown | 555-1234 | Realty Group     | 2020-01-01 |
+|       2 | Bob White   | 555-5678 | Acme Real Estate | 2019-05-15 |
++---------+-------------+----------+------------------+------------+
+2 rows in set (0.000 sec)
+
++---------------+
+| address       |
++---------------+
+| 101 Cherry Ln |
+| 123 Main St   |
+| 303 Maple St  |
+| 505 Walnut Dr |
++---------------+
+4 rows in set (0.000 sec)
+
++-------------+---------------+
+| agentName   | buyerName     |
++-------------+---------------+
+| Alice Brown | Charlie Green |
+| Alice Brown | Frank Black   |
+| Alice Brown | Hank Red      |
+| Bob White   | Dana Blue     |
+| Bob White   | Grace Pink    |
++-------------+---------------+
+5 rows in set (0.001 sec)
+
++---------+-------------+
+| agentId | totalBuyers |
++---------+-------------+
+|       1 |           3 |
+|       2 |           2 |
++---------+-------------+
+2 rows in set (0.000 sec)
+
++---------------+--------+
+| address       | price  |
++---------------+--------+
+| 303 Maple St  | 275000 |
+| 123 Main St   | 250000 |
+| 101 Cherry Ln | 220000 |
++---------------+--------+
+3 rows in set (0.001 sec)
+
+MariaDB [real_estate_3]> notee;
